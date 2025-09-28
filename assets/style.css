@@ -1,0 +1,69 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.page-content {
+    flex: 1; /* fill space to push footer down */
+}
+
+/* Header */
+.site-header {
+    background: #007bff;
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.site-header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: #ff4d4d;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background: #cc0000;
+}
+
+/* Footer */
+.site-footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Forms (optional global) */
+input, button {
+    font-family: Arial, sans-serif;
+}
