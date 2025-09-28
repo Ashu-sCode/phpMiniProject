@@ -1,0 +1,94 @@
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.container h2, .container h3 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Form */
+#form-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+#product-form input, #product-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#product-form button {
+    width: 48%;
+    padding: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#product-form button[type="submit"] {
+    background: #007bff;
+    color: #fff;
+}
+
+#product-form button[type="submit"]:hover { background:#0056b3; }
+#product-form #cancel-edit { background:#6c757d; color:#fff; }
+#product-form #cancel-edit:hover { background:#5a6268; }
+
+/* Error */
+.error { color: #dc3545; text-align:center; }
+
+/* Table */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inventory-table th, .inventory-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.inventory-table th {
+    background: #007bff;
+    color: white;
+}
+
+.inventory-table tr:hover { background:#f1f5f9; }
+
+.inventory-table button {
+    padding: 6px 12px;
+    margin: 0 3px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.inventory-table .edit-btn { background:#ffc107;color:#fff; }
+.inventory-table .edit-btn:hover { background:#e0a800; }
+.inventory-table .delete-btn { background:#dc3545;color:#fff; }
+.inventory-table .delete-btn:hover { background:#c82333; }
+
+/* Responsive */
+@media (max-width:768px){
+    #product-form button { width:100%; margin-top:10px; }
+    .inventory-table th,.inventory-table td { font-size:14px; padding:10px; }
+}
