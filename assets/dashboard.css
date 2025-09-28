@@ -1,34 +1,55 @@
-/* Dashboard container */
-.container {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+/* Container */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    justify-items: center;
 }
 
-/* Cards */
-.card {
+/* Card */
+.dashboard-card {
     background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 220px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-decoration: none;
-    color: black;
+    color: #333;
+    width: 220px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Icon */
+.dashboard-card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.dashboard-card .title {
     font-size: 18px;
+    font-weight: bold;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* Responsive for smaller screens */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .card {
+    .dashboard-card {
         width: 180px;
+        height: 150px;
+    }
+
+    .dashboard-card .icon {
+        font-size: 40px;
     }
 }

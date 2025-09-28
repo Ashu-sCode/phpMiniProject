@@ -13,7 +13,7 @@ CREATE TABLE users (
 
 -- Create contacts table
 CREATE TABLE contacts (
-    contact_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    contact_id INTEGER PRIMARY KEY AUTO_INCREMENT,
     user_id INTEGER,
     name TEXT NOT NULL,
     phone TEXT,
