@@ -1,0 +1,64 @@
+.container{
+    max-width:900px;
+    margin:40px auto;
+    padding:30px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+h2,h3{text-align:center;color:#007bff;margin-bottom:20px;}
+#form-container{
+    margin-bottom:30px;
+    padding:20px;
+    background:#f8f9fa;
+    border-radius:10px;
+}
+#complaint-form input,#complaint-form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+#complaint-form button{
+    width:48%;
+    padding:12px;
+    margin-top:10px;
+    font-weight:bold;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+#complaint-form button[type="submit"]{ background:#007bff;color:#fff; }
+#complaint-form button[type="submit"]:hover{ background:#0056b3; }
+#complaint-form #cancel-edit{ background:#6c757d;color:#fff; }
+#complaint-form #cancel-edit:hover{ background:#5a6268; }
+.error{ color:#dc3545; text-align:center; }
+
+.complaint-table{
+    width:100%;
+    border-collapse:collapse;
+}
+.complaint-table th,.complaint-table td{
+    padding:12px 15px;
+    border-bottom:1px solid #ddd;
+}
+.complaint-table th{ background:#007bff; color:white; }
+.complaint-table tr:hover{ background:#f1f5f9; }
+.complaint-table button{
+    padding:6px 12px;
+    margin:0 3px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+.complaint-table .edit-btn{ background:#ffc107;color:#fff; }
+.complaint-table .edit-btn:hover{ background:#e0a800; }
+.complaint-table .delete-btn{ background:#dc3545;color:#fff; }
+.complaint-table .delete-btn:hover{ background:#c82333; }
+
+@media(max-width:768px){
+    #complaint-form button{ width:100%; margin-top:10px; }
+    .complaint-table th,.complaint-table td{ font-size:14px; padding:10px; }
+}
