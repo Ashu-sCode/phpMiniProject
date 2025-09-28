@@ -1,0 +1,75 @@
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2,h3{text-align:center;color:#007bff;margin-bottom:20px;}
+
+#form-container{
+    margin-bottom:30px;
+    padding:20px;
+    background:#f8f9fa;
+    border-radius:10px;
+}
+
+#employee-form input,#employee-form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+#employee-form button{
+    width:48%;
+    padding:12px;
+    margin-top:10px;
+    font-weight:bold;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#employee-form button[type="submit"]{ background:#007bff;color:#fff; }
+#employee-form button[type="submit"]:hover{ background:#0056b3; }
+#employee-form #cancel-edit{ background:#6c757d;color:#fff; }
+#employee-form #cancel-edit:hover{ background:#5a6268; }
+
+.error{ color:#dc3545; text-align:center; }
+
+.employee-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.employee-table th,.employee-table td{
+    padding:12px 15px;
+    border-bottom:1px solid #ddd;
+}
+
+.employee-table th{ background:#007bff; color:white; }
+
+.employee-table tr:hover{ background:#f1f5f9; }
+
+.employee-table button{
+    padding:6px 12px;
+    margin:0 3px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.employee-table .edit-btn{ background:#ffc107;color:#fff; }
+.employee-table .edit-btn:hover{ background:#e0a800; }
+.employee-table .delete-btn{ background:#dc3545;color:#fff; }
+.employee-table .delete-btn:hover{ background:#c82333; }
+
+@media(max-width:768px){
+    #employee-form button{ width:100%; margin-top:10px; }
+    .employee-table th,.employee-table td{ font-size:14px; padding:10px; }
+}
